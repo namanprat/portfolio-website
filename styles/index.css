@@ -1,0 +1,146 @@
+*{  
+  margin: var(--gap-0);
+  padding: 0;
+  font-family: var(--text);
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+}
+.model{
+  position: absolute;
+  padding: 50px;
+  border: 0;
+  width: 100%;
+  height: 100%;
+  /* z-index: 2; */
+}
+.bg{
+  border: 0;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(87, 35, 35);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero-container{
+  width: 100vw;
+  height: 100vh;
+}
+
+.hero h1{
+  padding-top: 16vh;
+  z-index: 1;
+}
+.hero span{
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 0.25px;
+  -webkit-text-stroke-color: var(--white);
+}
+.desc-container{
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 150px;
+  margin: 0 auto;
+}
+.desc{
+  width: 50%;
+}
+.desc h2{
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 200%;
+}
+.hero,
+.projects{
+  width: 70%;
+  margin: 0 auto;
+
+}
+/* projects */
+.project-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-cluster{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 30px;
+}
+.project-content h2,
+.swiper-slide,
+.img{
+  width: 100%;
+}
+.project-content{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.project-description{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+}
+.swiper-pagination{
+  margin-top: 25px;
+}
+
+/* FOOTER */
+.footer{
+  overflow: auto;
+  background: var(--white);
+  color: black;
+}
+
+.footer h2,
+.footer h3,
+.footer p,
+.bottom-footer p,
+.bottom-footer a{
+  color: black;
+}
+.email-cta{
+  color: var(--black);
+  background-color: transparent;
+  border: 2px solid var(--black);
+}
+.email-cta:hover{
+  background-color: var(--black);
+  color: var(--white);
+}
+.social i{
+  color: var(--black);
+  font-size: 56px;
+}
+@media (max-width: 1200px){
+  .hero h1{
+    padding-left: 5%;
+  }
+  .desc h2{
+    font-size: 50px;
+    margin: 0;
+  }
+  .hero,
+  .desc,
+  .projects{
+    width: 90%;
+  }
+  .desc{
+    padding-top: 400px;
+    padding-bottom: 400px;
+  }
+  .project-description p{
+    padding-bottom: 25px;
+  }
+}

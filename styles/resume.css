@@ -1,0 +1,135 @@
+.divider{
+  animation: 2s ease 0.5s 1 normal forwards scale-up;
+}
+@keyframes scale-up {
+  0% {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+body{
+  /*background: #8CC4B1;*/
+  background-color: rgb(253, 253, 253);
+  color: black;
+}
+.resume-content{
+  padding: 0px 10vw;
+}
+/*HEADER*/
+nav{
+  color: black;
+}
+nav li a{
+  color: black;
+}
+nav li a::after{
+  background: black;
+}
+.download-cta{
+  border-radius: 5px;
+  font-family: var(--cta);
+  font-size: var(--cta-size);
+  padding: 15px 15px;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  background: black;
+  border: 0px;
+}
+/*TEXT*/
+.intro h1,
+.h1{
+  align-self: center;
+  padding-bottom: 75px;
+  font-size: var(--h1);
+  font-weight: 500;
+}
+h3{
+  color: var(--black);
+  text-transform: capitalize;
+}
+p{
+  font-size: var(--p-text-size);
+  color: var(--portfolio-body-text);
+  line-height: 225%;
+}
+
+/* INFO DIV*/
+.intro{
+  padding-top: 7.5vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.intro h1{
+  font-size: 7rem;
+}
+.inner-intro{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.inner-intro p{
+  line-height: 175%;
+  width: 40%;
+}
+.links{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px;
+}
+.icon{
+  position: relative;
+  width: 48px;
+  height: auto;
+  margin: 15px;
+  overflow: hidden;
+}
+.links-content h4{
+  font-size: var(--cta-size);
+  font-weight: 500;
+  color: var(--color-gray);
+}
+.links-content p{
+  line-height: 100%;
+  font-size: var(--text-size);
+}
+/*PROJECT CONTENT*/
+.content{
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+.section{
+  display: grid;
+  align-self: center;
+  padding: 25px 0;
+}
+.section-3{
+width: 45%;
+}
+.skillstools{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 25px 0;
+}
+.section-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.divider{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-top: 3px solid #c5c5c5;
+}
+.institution{
+font-weight: 600;
+}
+.footer h2{
+  color: white;
+}

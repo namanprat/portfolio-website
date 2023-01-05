@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Naman Pratulya">
+    <meta name="description" content="Naman Pratulya's Portfolio">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>My Work</title>
+
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/work.css" />
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=DM Mono:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@500&display=swap"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  </head>
+  <body>
+    <div id="work">
+      <div class='grained'></div>
+      <div id="header">
+        <div class="navbar" data-animate-on-scroll>
+          <nav>
+            <li><a href="./index.html" class="cta">@NAMANPRAT</a></li>
+            <ul>
+                <li><a href="./work.html" class="cta">MY WORK</a></li>
+                <li><a href="#bottom" class="cta">CONNECT</a></li>
+                <li><a href="./resume.html" class="cta">RESUME</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div id="blocks">
+        <div class='grained'></div>
+        <div class="block init" data-block-section="1" data-href="home">
+          <div class="block__title">Home</div>
+          <p>01</p>
+        </div>
+        <div class="block init" data-block-section="2" data-href="collection">
+          <div class="block__title">Collection</div>
+          <p>02</p>
+        </div>
+        <div class="block init" data-block-section="3" data-href="material">
+          <div class="block__title">Material</div>
+          <p>03</p>
+        </div>
+        <div class="block init" data-block-section="4" data-href="production">
+          <div class="block__title">Production</div>
+          <p>04</p>
+        </div>
+
+      </div>
+      <main data-scroll-container>
+        <div class='grained'></div>
+        <div class="wrap" data-scroll-section>
+          <section class="section" data-block-section="1">
+            Home Lorem Ipsum is <br />
+            simply dummy text of the <br />
+            printing and typesetting <br />industry.
+            Home Lorem Ipsum is <br />
+            simply dummy text of the <br />
+            printing and typesetting <br />industry.
+            Home Lorem Ipsum is <br />
+            simply dummy text of the <br />
+            printing and typesetting <br />industry.
+            Home Lorem Ipsum is <br />
+            simply dummy text of the <br />
+            printing and typesetting <br />industry.
+          </section>
+          <section class="section" data-block-section="2">
+            Collection Lorem Ipsum is <br />
+            simply dummy text of the <br />
+            printing and typesetting <br />industry.
+          </section>
+          <section class="section" data-block-section="3">
+            Material Lorem Ipsum is <br />
+            simply dummy text of the <br />
+            printing and typesetting <br />industry.
+          </section>
+          <section class="section" data-block-section="4">
+            Production Lorem Ipsum is <br />
+            simply dummy text of the <br />
+            printing and typesetting <br />industry.
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+  <script src="./js/app.js"></script>
+  <script src="./js/grained.js"></script>
+  <script>
+    var options = {
+      "animate": true,
+      "patternWidth": 100,
+      "patternHeight": 100,
+      "grainOpacity": 0.055,
+      "grainDensity": 1,
+      "grainWidth": 1,
+      "grainHeight": 1
+    }
+    grained('#work',options);
+  </script>
+  <script>
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector("[data-scroll-container]"),
+      smooth: true,
+      direction: "horizontal",
+    });
+
+    let blocks = document.querySelectorAll(".block[data-block-section]");
+    scroll.on("scroll", (args) => {
+      blocks.forEach((block) => {
+        let attr = block.getAttribute("data-block-section");
+        let section = document.querySelector(
+          `section[data-block-section='${attr}']`
+        );
+
+        if (section.getBoundingClientRect().left <= block.offsetWidth * attr) {
+          block.classList.add("fixed");
+          block.classList.remove("init");
+          block.classList.remove("active");
+          block.style.left = "";
+        } else if (
+          section.getBoundingClientRect().left >=
+          window.innerWidth - block.offsetWidth * (blocks.length - attr)
+        ) {
+          block.classList.add("init");
+          block.classList.remove("active");
+          block.classList.remove("fixed");
+          block.style.left = "";
+        } else {
+          block.classList.add("active");
+          block.classList.remove("init");
+          block.classList.remove("fixed");
+        }
+
+        if (block.classList.contains("active")) {
+          block.style.left = section.getBoundingClientRect().left + "px";
+        }
+      });
+    });
+  </script>
+</html>
