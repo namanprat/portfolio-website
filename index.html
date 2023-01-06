@@ -35,9 +35,9 @@
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
   </head>
   <body>
-    <div id="home" data-scroll-container>
-
-      <iframe class="bg" src='https://my.spline.design/untitled-451bcb9108728dbdf9d9391667b26ccb/'></iframe>
+    <div id="preloader"></div>
+    <div id="index" data-scroll-container>
+      <iframe class="bg" src='https://my.spline.design/portfoliohero-3481d9fab646f7d308ca85578104f225/'></iframe>
       <div id="header">
         <div class="navbar" data-animate-on-scroll>
           <nav>
@@ -70,7 +70,7 @@
           </div>
       </model-viewer>
       </div>
-      <div class="projects" data-scroll data-scroll-speed="2">
+      <div class="projects" data-scroll data-scroll-speed="1.5">
           <div class="project-header" data-scroll data-scroll-speed="0.5">
             <h2>Featured projects</h2>
          <div class="nav-cluster">
@@ -166,16 +166,8 @@
   <script src="./js/grained.js"></script>
 
 <script>
-var options = {
-  "animate": true,
-  "patternWidth": 100,
-  "patternHeight": 100,
-  "grainOpacity": 0.055,
-  "grainDensity": 1,
-  "grainWidth": 1,
-  "grainHeight": 1
-}
-grained('#home',options);
+var options = {}
+grained('#index',options);
 </script>
 
   <script>
@@ -199,21 +191,7 @@ grained('#home',options);
         observer.observe(scrollAnimElements[i]);
       }
   </script>
-   
-   <script>
-   gsap.registerPlugin(ScrollTrigger)
-
-  gsap.to("desc h2", {
-    backgroundPositionX: "0%",
-    stagger: 1,
-    scrollTrigger: {
-      trigger: ".desc h2",
-      scrub: 1,
-      start: "top center",
-      end: "bottom top",
-    },
-  });
-
+  <script>
   const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
@@ -227,6 +205,13 @@ grained('#home',options);
     prevEl: '.swiper-button-prev',
   },
 });
-   </script>  
+   </script>
+   <script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+      loader.style.display = "none";
+
+    })
+   </script>
   </body>
 </html>

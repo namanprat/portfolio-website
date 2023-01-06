@@ -188,41 +188,32 @@
   <script src="./js/scroll.js"></script>
   <script src="./js/app.js"></script>
   <script src="./js/grained.js"></script>
-
-                <script>
-                  var options = {
-                    "animate": true,
-                    "patternWidth": 100,
-                    "patternHeight": 100,
-                    "grainOpacity": 0.055,
-                    "grainDensity": 1,
-                    "grainWidth": 1,
-                    "grainHeight": 1
-                  }
-                  grained('#covihelp',options);
-                  </script>
-                  
-                    <script>
-                       var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
-                        var observer = new IntersectionObserver(
-                          (entries) => {
-                            for (const entry of entries) {
-                              if (entry.isIntersecting || entry.intersectionRatio > 0) {
-                                const targetElement = entry.target;
-                                targetElement.classList.add("animate");
-                                observer.unobserve(targetElement);
-                              }
-                            }
-                          },
-                          {
-                            threshold: 0.5,
-                          }
-                        );
-                        
-                        for (let i = 0; i < scrollAnimElements.length; i++) {
-                          observer.observe(scrollAnimElements[i]);
-                        }
-                    </script>
+  <script>
+    var options = {}
+    grained('#covihelp',options);
+    </script>
+    
+      <script>
+         var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+          var observer = new IntersectionObserver(
+            (entries) => {
+              for (const entry of entries) {
+                if (entry.isIntersecting || entry.intersectionRatio > 0) {
+                  const targetElement = entry.target;
+                  targetElement.classList.add("animate");
+                  observer.unobserve(targetElement);
+                }
+              }
+            },
+            {
+              threshold: 0.5,
+            }
+          );
+          
+          for (let i = 0; i < scrollAnimElements.length; i++) {
+            observer.observe(scrollAnimElements[i]);
+          }
+      </script>       
 </body>
 </html>
 
