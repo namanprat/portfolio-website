@@ -56,21 +56,19 @@
       </div>
     </div>
       <div class="desc-container">
-        <div class="desc"  data-scroll data-scroll-speed="2.5">
+        <div class="desc"  data-scroll data-scroll-speed="2">
           <h2>With a passion for design, visuals, interaction, problem-solving. My goal is to create 
             sustainable solutions that are visually pleasing.</h2>
         </div>
-        <style> model-viewer{
-           width: 500px;
-           height: 700px;
-           }</style>
-        <model-viewer src="public/funko.gltf" field-of-view='34deg' auto-rotate ar ar-modes="webxr scene-viewer quick-look" disable-zoom camera-controls poster="poster.webp" shadow-intensity="1" >
+           <!-- <model-viewer id="reveal" loading="eager" auto-rotate disable-zoom shadow-intensity="0"
+           src="public/model.glb" field-of-view='34deg' shadow-intensity="1" alt="A funko pop of me"></model-viewer> -->
+        <model-viewer src="public/model.glb" loading="eager" field-of-view='34deg' auto-rotate disable-zoom poster="poster.webp" shadow-intensity="0" >
           <div class="progress-bar hide" slot="progress-bar">
               <div class="update-bar"></div>
           </div>
       </model-viewer>
       </div>
-      <div class="projects" data-scroll data-scroll-speed="1.5">
+      <div class="projects" data-scroll data-scroll-speed="2">
           <div class="project-header" data-scroll data-scroll-speed="0.5">
             <h2>Featured projects</h2>
          <div class="nav-cluster">
@@ -85,8 +83,8 @@
           <div class="project-content">
             <h2>money.me</h2>
               <div class="project-description">
-                <p>Money management app for the financially illiterate and college students.
-              </p>
+                <p>Money management app for the financially illiterate 
+                  and college students.</p>
               <a href="money-me.html" class="read-more-cta">
               <div class="cta">READ MORE</div>
               <i class="fa-solid fa-chevron-right"></i></a>
@@ -98,8 +96,8 @@
         <div class="project-content">
           <h2>Covihelp</h2>
             <div class="project-description">
-              <p>Money management app for the financially illiterate and college students.
-            </p>
+              <p>All in one health app that helps local communities 
+                connect with medical facilites</p>
             <a href="covihelp.html" class="read-more-cta">
             <div class="cta">READ MORE</div>
             <i class="fa-solid fa-chevron-right"></i></a>
@@ -111,7 +109,8 @@
       <div class="project-content">
         <h2>The Sage Network</h2>
           <div class="project-description">
-            <p>A modern decentralized news aggregate platform for the user, by the user.</p>
+            <p>A modern decentralized news aggregate platform for the user, 
+              by the user.</p>
           <a href="tsn.html" class="read-more-cta">
           <div class="cta">READ MORE</div>
           <i class="fa-solid fa-chevron-right"></i></a>
@@ -155,7 +154,7 @@
       </ul>
       <div class="bottom-footer" data-scroll data-scroll-speed="0.01">
         <p>Made by Naman Pratulya</p>
-        <a href="#" class="cta">BACK TO THE TOP</a>
+        <a href="#header" class="cta">BACK TO THE TOP</a>
       </div>
       </div>
       </div>
