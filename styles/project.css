@@ -89,7 +89,6 @@ h2,
   align-items: flex-start;
 }
 .section{
-  margin: 100px;
   width: 75vw;
   display: flex;
   flex-direction: row;
@@ -106,6 +105,8 @@ h2,
 }
 .section-header{
   width: 50%;
+  margin: auto;
+  align-self: center;
 }
 .questionnaire{
   margin: 100px;

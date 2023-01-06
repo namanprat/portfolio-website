@@ -41,6 +41,7 @@ nav li a::after{
 /*TEXT*/
 .intro h1,
 .h1{
+  white-space: nowrap;
   align-self: center;
   padding-bottom: 75px;
   font-size: var(--h1);
@@ -51,7 +52,7 @@ h3{
   text-transform: capitalize;
 }
 p{
-  font-size: var(--p-text-size);
+  font-size: var(--text-size);
   color: var(--portfolio-body-text);
   line-height: 225%;
 }
@@ -64,7 +65,7 @@ p{
   flex-direction: column;
 }
 .intro h1{
-  font-size: 7rem;
+  font-size: var(--h1);
 }
 .inner-intro{
   display: flex;
@@ -133,3 +134,24 @@ font-weight: 600;
 .footer h2{
   color: white;
 }
+@media (max-width: 768px){
+  .inner-intro{
+    flex-direction: column;
+    align-items: center;
+  }
+    .inner-intro p{
+      width: 100%;
+    }
+    .links-section{
+    display: flex;
+    flex-direction: row;
+    }
+  }
+  @media (max-width: 425px){
+    .intro h1{
+      font-size: 4rem;
+    }
+    p{
+      font-size: 1.4rem;
+    }
+  }
