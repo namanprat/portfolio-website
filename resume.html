@@ -1,191 +1,199 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <meta charset="utf-8">
+    <meta name="author" content="Naman Pratulya">
+    <meta name="description" content="Naman Pratulya's Portfolio">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
+    
     <title>Resume</title>
-    <meta name="description" content="" />
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
 
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/resume.css" />
-    <link rel="stylesheet" href="./styles/locomotive-scroll.css" />
-    
+    <link rel="stylesheet" href="https://use.typekit.net/mgt6qut.css">  
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM Mono:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@500&display=swap"
-    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5EDPQP6NY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-  </head>
+  gtag('config', 'G-X5EDPQP6NY');
+</script>
+  </head> 
   <body>
-    <div id="resume" data-scroll-container>
-      <div class="header">
-        <div id="header">
-          <div class="navbar" data-animate-on-scroll>
-            <nav>
-              <li><a href="./index.html" class="cta">NAMAN PRATULYA</a></li>
-              <ul>
-                  <li><a href="#work" class="cta">MY WORK</a></li>
-                  <li><a href="#bottom" class="cta">CONNECT</a></li>
-                  <a href="public/CV.pdf" download class="download-cta">DOWNLOAD RESUME<i class="fa-regular fa-arrow-down-to-line"></i></a>
-              </ul>
-            </nav>
-          </div>
-        </div>
-        </div>
-        <div class="resume-content" data-animate-on-scroll>
-          <div class="intro" data-scroll data-scroll-speed="2">
-            <h1>Hello there!</h1>
-            <div class="inner-intro" data-scroll data-scroll-speed="2"> 
-             <p>I am a 21 year old creative service designer with a passion for design,
-              visuals, interaction, problem-solving to create sustainable solutions.
-             </p>
-             <div class="contact-info">
-              <div class="links-section">
-                <div class="links">
-                  <img class="icon" alt="" src="./icons/phone.svg" />
-                  <div class="links-content">
-                    <h4>Phone no.</h4>
-                    <p>+919742813515</p>
-                  </div>
-                </div>
-                <div class="links">
-                  <img class="icon" alt="" src="./icons/mail.svg" />
-                  <div class="links-content">
-                    <h4>Email ID</h4>
-                    <p>a.namanprat@gmail.com</p>
-                  </div>
+    <main>
+      <div id="resume">
+        
+        <nav id="navbar" class="row space-bw w center">
+          <li><a id="nav-resume" class="nav" href="./public/CV.pdf">download RESUME</a></li>
+          <li><a id="nav-home" class="nav" href="./index.html">Naman Pratulya</a></li>
+          <li><a id="nav-contact" class="nav" href="mailto:hello@namanprat.com">CONTACT</a></li>
+        </nav>
+
+      <div class="col space-bw center w">
+        <h1 id="hello">Hello <span>there!</span></h1>
+        <intro class="flex space-bw"> 
+         <p id="intro-desc">I am a 21 year old creative service designer with a passion for design,
+          visuals, interaction, problem-solving to create sustainable solutions.</p>
+         <div>
+          <div id="links-cluster">
+            <div class="links-section">
+              <div class=" row center">
+                <img class="icon" alt="" src="./icons/phone.svg" />
+                <div class="col start">
+                  <h4>PHONE NO.</h4>
+                  <p>+919742813515</p>
                 </div>
               </div>
-              <div class="links-section">
-                <div class="links">
-                  <img class="icon" alt="" src="./icons/address.svg" />
-                  <div class="links-content">
-                    <h4>Address</h4>
-                    <p>Bangalore,India</p>
-                  </div>
-                </div>
-                <div class="links">
-                  <img class="icon" alt="" src="./icons/linkedin.svg" />
-                  <div class="links-content">
-                    <h4>LinkedIn</h4>
-                    <p>namanprat</p>
-                  </div>
+              <div class="row center">
+                <img class="icon" alt="" src="./icons/mail.svg" />
+                <div class="col start">
+                  <h4>EMAIL ID</h4>
+                  <p>a.namanprat@gmail.com</p>
                 </div>
               </div>
             </div>
-           </div>
-        </div>
-            <div class="content">
-              <div class="section" data-scroll data-scroll-speed="1">
-                <div class="section-1"  data-scroll data-scroll-speed="0.5">
-                  <h3>Projects</h3>
-                  <div class="divider" data-animate-on-scroll></div>
-                  </div>
-                <p>money.me- App to create financial awareness among the youth</p>
-                <p>Covihelp- All in one health app that helps local communities connect with medical facilites</p>
-                <p>How to host a zero waste cooperate event using sustainable methods</p>
-                <p>The Sage Network- Decentralized news platform</p>
-                <p>IRCTC redesign- A complete redesign of the IRCTC homepage using Figma</p>
-              </div>
-              <div class="skillstools">
-                <div class="section-3" data-scroll data-scroll-speed="1">
-                  <div class="section-1"  data-scroll data-scroll-speed="0.5">
-                    <h3>Skills</h3>
-                    <div class="divider" data-animate-on-scroll></div>
-                  </div>
-                  <p>UI | UX | Design principles | Design Thinking and Research | UX
-                    Research | Interaction design | User empathy | Visual design | User
-                    testing | Wireframing | Prototyping skills | Soft skills</p>
-                </div>
-                <div class="section-3" data-scroll data-scroll-speed="1">
-                  <div class="section-1"  data-scroll data-scroll-speed="1">
-                    <h3>Tools</h3>
-                    <div class="divider" data-animate-on-scroll></div>
-                  </div>
-                  <p>Figma | Illustrator | Photoshop | Figjam | Miro | InDesign | Lightroom
-                    | Fusion 360 | Maya | Premiere Pro | Davinci Resolve | Google Slides |
-                    Canva | HTML | OOP | Cura</p>
+            <div class="links-section">
+              <div class=" row center">
+                <img class="icon" alt="" src="./icons/address.svg" />
+                <div class="col start">
+                  <h4>ADDRESS</h4>
+                  <p>Bangalore,India</p>
                 </div>
               </div>
-              <div class="section" data-scroll data-scroll-speed="1">
-                <div class="section-1"  data-scroll data-scroll-speed="0.5">
-                  <h3>Hobbies</h3>
-                  <div class="divider" data-animate-on-scroll></div>
-                </div>
-                <p>Rebuilding/ restoring items | Building and designing mechanical
-                  keyboards | 3D printing</p>
-              </div>
-              <div class="section" data-scroll data-scroll-speed="1">
-                <div class="section-1"  data-scroll data-scroll-speed="0.5">
-                  <h3>Education</h3>
-                  <div class="divider" data-animate-on-scroll></div>
-                </div>
-                <div class="section-2" data-scroll data-scroll-speed="1">
-                  <div class="section-1">
-                    <div class="institution"><p>
-                      Srishti Manipal Institute of Art, Design and Technology
-                    </p>
-                    </div>
-                    <p>2020-2024</p>
-                  </div>
-                  <l>B. Des</l>
+              <div class=" row center">
+                <img class="icon" alt="" src="./icons/linkedin.svg" />
+                <div class="col start">
+                  <h4>LINKEDIN</h4>
+                  <p>namanprat</p>
                 </div>
               </div>
             </div>
           </div>
-        <div id="bottom">
-          <div class="footer" data-scroll data-scroll-speed="2">
-            <h2>Let's take the next big step</h2>
-            <div class="inner-footer" > 
-             <p> Have an idea and like my work? Take the next big step with your
-              ideas and make them a reality. Shoot me an email and we shall get
-              into contact as soon as possible!
-             </p>
-              <a href="mailto:a.namanprat@gmail.com" class="email-cta">
-                <div class="cta">SEND AN EMAIL</div>
-                <i class="fa-solid fa-chevron-right"></i></a>
-           </div>
-        <ul class="social">
-          <li><a class="links" href="https://www.linkedin.com/in/namanprat/">
-              <i class="fa-brands fa-linkedin"></i>
-              <div class="social-div">
-                <h3>LinkedIn</h3>
-                <p>@namanprat</p>
+        </div>
+      </intro>
+      </div>
+
+      <section class="grid center w">
+        <div class="col">
+          <h3>Work experience</h3>
+          <divider animate></divider>
+        </div>
+        <div class="row space-bw center">
+          <div class="col">
+            <h4 id="institute">New Street Technologies</h4>
+            <p>UI | UX Designer</p>
+          </div>
+          <p>Jan 2023-Present</p>
+        </div>
+      </section>
+
+      <section class="center w">
+        <div class="col">
+          <h3>Projects</h3>
+          <divider animate></divider>
+          </div>
+        <p>money.me- App to create financial awareness among the youth
+        <br>Covihelp- All in one health app that helps local communities connect with medical facilites
+        <br>How to host a zero waste cooperate event using sustainable methods
+        <br>The Sage Network- Decentralized news platform
+        <br>IRCTC redesign- A complete redesign of the IRCTC homepage using Figma</p>
+        </section>
+        <div id="section-cluster" class="flex space-bw w">
+          <section class="sec">
+            <div class="col">
+              <h3>Skills</h3>
+              <divider animate></divider>
+            </div>
+            <p>UI | UX | Design principles | Design Thinking and Research | UX
+              Research | Interaction design | User empathy | Visual design | User
+              testing | Wireframing | Prototyping skills | Soft skills</p>
+          </section>
+          <section class="sec">
+            <div class="col">
+              <h3>Tools</h3>
+              <divider animate></divider>
+            </div>
+            <p>Figma | Illustrator | Photoshop | Figjam | Miro | InDesign | Lightroom
+              | Fusion 360 | Maya | Premiere Pro | Davinci Resolve | Google Slides |
+              Canva | HTML | OOP | Cura</p>
+          </section>
+        </div>
+        <section class="grid center w">
+          <div class="col">
+            <h3>Hobbies</h3>
+            <divider animate></divider>
+          </div>
+          <p>Rebuilding/ restoring items | Building and designing mechanical
+            keyboards | 3D printing</p>
+          </section>
+          <section class="grid center w">
+            <div class="col">
+              <h3>Education</h3>
+              <divider animate></divider>
+            </div>
+            <div class="row space-bw center">
+              <div class="col">
+                <h4 id="institute">Srishti Manipal Institute of Art, Design and Technology</h4>
+                </div>
+                <p>B. Des</p>
               </div>
-             </a>
-          </li>
-          <li><a class="links" href="https://instagram.com/namanprat_">
-            <i class="fa-brands fa-instagram"></i>
-          <div class="social-div">
-            <h3>Instagram</h3>
-            <p>@namanprat_</p>
-          </div></a>
-        </li>
-        </ul>
-        <div class="bottom-footer" data-scroll data-scroll-speed="0.01">
-          <p>Made by Naman Pratulya</p>
-          <a href="#" class="cta">BACK TO THE TOP</a>
+              <p>2020-2024</p>
+        </section>
+      </div>
+    </main>
+    <footer class="col center space-bw w">
+      <div id="sitemap-cluster" class="row space-bw end">
+          <sec></sec>
+          <div class="site row space-bw">
+              <div class="footer-nav">
+                  <h4>Sitemap</h4>
+                      <a class="hvr" href="./index.html"><p>Home</p></a>
+                      <a class="hvr" href="./"><p>Projects</p></a>
+                      <a class="hvr" href="./resume.html"><p>Resume</p></a>
+              </div>
+              <div class="footer-nav">
+                  <h4>My socials</h4>
+                      <a class="hvr" href="https://www.linkedin.com/in/namanprat/"><p>LinkedIn</p></a>
+                      <a class="hvr" href="https://instagram.com/namanprat_"><p>Instagram</p></a>
+                      <a class="hvr" href="https://github.com/namanprat"><p>Github</p></a>
+              </div>
+          </div>
+      </div>
+      <div class="footer-title center">
+          <h4>You've reached the end</h4>
+          <a class="hvr" href="mailto:hello@namanprat.com">
+            <logo id="footer-cta" class="row justify-center">
+              Shoot me an email <div class="icon">
+            <svg fill="#1C2033" id="top-right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+          <g>
+          <path d="M15,51.3c-0.6,0-1.2-0.2-1.6-0.7c-0.9-0.9-0.9-2.3,0-3.2l30.3-30.3H19.5c-1.2,0-2.2-1-2.2-2.2s1-2.2,2.2-2.2H49
+           c1.2,0,2.2,1,2.2,2.2v29.7c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2V20.5L16.6,50.7C16.2,51.1,15.6,51.3,15,51.3z"/>
+          </g>
+          </svg>
+          </div>
+        </logo>
+      </a>
+      </div>
+      <h4 class="bottom">Designed and built by me</h4>
+    </footer>
+
         </div>
-        </div>
-        </div>
+      </div>
     </div>
 
-    <script src="./js/scroll.js"></script>
-    <script src="./js/app.js"></script>
-    <script src="./js/grained.js"></script>
+    <script src="./scripts/ukiyo.min.js"></script>
+    <script src="./scripts/lenis.js"></script>
 
     <script>
       var options = {}
@@ -193,7 +201,7 @@
       </script>
 
 <script>
-  var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
+  var scrollAnimElements = document.querySelectorAll("[animate]");
    var observer = new IntersectionObserver(
      (entries) => {
        for (const entry of entries) {

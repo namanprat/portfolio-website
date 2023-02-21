@@ -6,211 +6,125 @@
     <meta name="description" content="Naman Pratulya's Portfolio">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Naman Pratulya</title>
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
 
+    <title>Naman Pratulya</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
+    
     <link rel="stylesheet" href="./styles/global.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/locomotive-scroll.css" />
-    <link rel="stylesheet" href="./styles/swiper-bundle.css" />
+    <link rel="stylesheet" href="./styles/load.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/mgt6qut.css" />
 
+    <script src="https://cdn.jsdelivr.net/npm/splittext@2.0.0/splitText.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5EDPQP6NY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM Mono:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@500&display=swap"
-    />
-    
-    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+  gtag('config', 'G-X5EDPQP6NY');
+</script>
   </head>
   <body>
-    <div id="preloader"></div>
-    <div id="index" data-scroll-container>
-      <iframe class="bg" src='https://my.spline.design/portfoliohero-3481d9fab646f7d308ca85578104f225/'></iframe>
-      <div id="header">
-        <div class="navbar" data-animate-on-scroll>
-          <nav>
-            <li><a href="#" class="cta">@NAMANPRAT</a></li>
-            <ul>
-                <li><a href="./work.html" class="cta">MY WORK</a></li>
-                <li><a href="#bottom" class="cta">CONNECT</a></li>
-                <li><a href="./resume.html" class="cta">RESUME</a></li>
-            </ul>
-          </nav>
+      <div id="loader">
+        <h2 class="reveal">Naman <span> Pratulya</span></h2>
         </div>
-      </div>
-      <div class="hero-container" data-scroll data-scroll-speed="3">
-      <div class="hero" data-animate-on-scroll>
-        <h1>Your friendly<br>neighbourhood<br><span>problem solver</span></h1>
+      <main id="home">
+            <nav id="navbar" class="row space-bw center w-2">
+              <li><a id="nav-resume" class="nav" href="./resume.html">RESUME</a></li>
+              <li><a id="nav-home" class="nav" href="./index.html">NAMAN PRATULYA</a></li>
+              <li><a id="nav-contact" class="nav" href="mailto:hello@namanprat.com">CONTACT</a></li>
+            </nav>
+
+     <div class="hero-container center w-2">
+      <div id="hero" class="col self-center justify-center">
+        <h1 class="col center reveal self-start">Your friendly</h1>
+        <h1 class="reveal self-center">neighbourhood</h1>
+        <h1 class="reveal self-end"><span>problem solver</span></h1>
+        <h4 id="extra-text">Open for freelancing projects</h4>
       </div>
     </div>
-      <div class="desc-container">
-        <div class="desc"  data-scroll data-scroll-speed="2">
-          <h2>With a passion for design, visuals, interaction, problem-solving. My goal is to create 
-            sustainable solutions that are visually pleasing.</h2>
-        </div>
-           <!-- <model-viewer id="reveal" loading="eager" auto-rotate disable-zoom shadow-intensity="0"
-           src="public/model.glb" field-of-view='34deg' shadow-intensity="1" alt="A funko pop of me"></model-viewer> -->
-        <model-viewer src="public/model.glb" loading="eager" field-of-view='34deg' auto-rotate disable-zoom poster="poster.webp" shadow-intensity="0" >
-          <div class="progress-bar hide" slot="progress-bar">
-              <div class="update-bar"></div>
-          </div>
-      </model-viewer>
-      </div>
-      <div class="projects" data-scroll data-scroll-speed="2">
-          <div class="project-header" data-scroll data-scroll-speed="0.5">
-            <h2>Featured projects</h2>
-         <div class="nav-cluster">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
-         </div>
-        </div>
-       <div class="swiper" >
-       <div class="swiper-wrapper">
-         <div class="swiper-slide">
-            <img class="img" alt="" src="images/money-me/cover.jpg" />
-          <div class="project-content">
-            <h2>money.me</h2>
-              <div class="project-description">
-                <p>Money management app for the financially illiterate 
-                  and college students.</p>
-              <a href="money-me.html" class="read-more-cta">
-              <div class="cta">READ MORE</div>
-              <i class="fa-solid fa-chevron-right"></i></a>
-              </div>
-          </div>
-         </div>
-         <div class="swiper-slide">
-          <img class="img" alt="" src="images/covihelp/cover.jpg" />
-        <div class="project-content">
-          <h2>Covihelp</h2>
-            <div class="project-description">
-              <p>All in one health app that helps local communities 
-                connect with medical facilites</p>
-            <a href="covihelp.html" class="read-more-cta">
-            <div class="cta">READ MORE</div>
-            <i class="fa-solid fa-chevron-right"></i></a>
-            </div>
-        </div>
-       </div>
-       <div class="swiper-slide">
-        <img class="img" alt="" src="images/tsn/cover.jpg" />
-      <div class="project-content">
-        <h2>The Sage Network</h2>
-          <div class="project-description">
-            <p>A modern decentralized news aggregate platform for the user, 
-              by the user.</p>
-          <a href="tsn.html" class="read-more-cta">
-          <div class="cta">READ MORE</div>
-          <i class="fa-solid fa-chevron-right"></i></a>
-          </div>
-      </div>
-     </div>
-       </div>
-       </div>
-       <div class="pagination" >
-       <div class="swiper-pagination"></div>
-      </div>
-      </div>
-      <div id="bottom">
-        <div class="footer" data-scroll data-scroll-speed="2">
-          <h2>Let's take the next big step</h2>
-          <div class="inner-footer" > 
-           <p> Have an idea and like my work? Take the next big step with your
-            ideas and make them a reality. Shoot me an email and we shall get
-            into contact as soon as possible!
-           </p>
-            <a href="mailto:a.namanprat@gmail.com" class="email-cta">
-              <div class="cta">SEND AN EMAIL</div>
-              <i class="fa-solid fa-chevron-right"></i></a>
-         </div>
-      <ul class="social">
-        <li><a class="links" href="https://www.linkedin.com/in/namanprat/">
-            <i class="fa-brands fa-linkedin"></i>
-            <div class="social-div">
-              <h3>LinkedIn</h3>
-              <p>@namanprat</p>
-            </div>
-           </a>
-        </li>
-        <li><a class="links" href="https://instagram.com/namanprat_">
-          <i class="fa-brands fa-instagram"></i>
-        <div class="social-div">
-          <h3>Instagram</h3>
-          <p>@namanprat_</p>
-        </div></a>
-      </li>
-      </ul>
-      <div class="bottom-footer" data-scroll data-scroll-speed="0.01">
-        <p>Made by Naman Pratulya</p>
-        <a href="#header" class="cta">BACK TO THE TOP</a>
-      </div>
-      </div>
-      </div>
-  </div>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <script src="./js/scroll.js"></script>
-  <script src="./js/app.js"></script>
-  <script src="./js/grained.js"></script>
+    <div id="about" class="col center w">
+              <h2 id="desc" class="desc col overflow-hidden center">
+                <bruv>I help <span>mission-driven</span> organisations in making a significant impact 
+                  by implementing <span>sustainable</span> and <span>visually stunning solutions</span> that <span>leave a lasting impression.</span></bruv>
+        </h2>
+      <a class="cta" href="mailto:hello@namanprat.com">LET'S TALK</a>
+    </div>
+      <div id="work" class="col space-bw center">
+        <h1 id="work-title" class="flex row center">Featured Work</h1>
 
-<script>
-var options = {}
-grained('#index',options);
-</script>
 
-  <script>
-     var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
-      var observer = new IntersectionObserver(
-        (entries) => {
-          for (const entry of entries) {
-            if (entry.isIntersecting || entry.intersectionRatio > 0) {
-              const targetElement = entry.target;
-              targetElement.classList.add("animate");
-              observer.unobserve(targetElement);
-            }
-          }
-        },
-        {
-          threshold: 0.5,
-        }
-      );
+          <div id="project-row" class="flex center space-even w">
+            <project class="self-start">
+              <a href="./money-me.html">
+                <img src="./images/money-me/cover.jpg" />
+                <h2 id="project-cta">money.me</h2>
+              </a>
+            </project>
+  
+              <project class="self-end">
+                <a href="./covihelp.html">
+                  <img src="./images/covihelp/cover.jpg" />
+                  <h2 id="project-cta">Covihelp</h2>
+                </a>
+              </project>
+        
+              <project class="self-start">
+                <a href="./tsn.html">
+                  <img src="./images/tsn/cover.jpg" />
+                  <h2 id="project-cta">The Sage Network</h2>
+                </a>
+              </project>
+            
+    
+              <project class="self-end">
+                <a href="./money-me.html">
+                  <img src="./images/irctc/cover.png" />
+                  <h2 id="project-cta">IRCTC Redesign</h2>
+                </a>
+              </project>
+          </div>
+      </div>
+  </main>
+
+    <footer class="col center space-bw w">
+    <div class="marquee">
+      <div class="marquee-content self-center">
+        <h4>Naman Pratulya</h4>
+        <h4>Naman Pratulya</h4>
+        <h4>Naman Pratulya</h4>
+        <h4>Naman Pratulya</h4>
+        <h4>Naman Pratulya</h4>
+      </div>
       
-      for (let i = 0; i < scrollAnimElements.length; i++) {
-        observer.observe(scrollAnimElements[i]);
-      }
-  </script>
-  <script>
-  const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  loop: true,
-  pagination: { 
-    el: '.swiper-pagination', 
-    type: "progressbar", 
-  },
+    </div>
+      <div id="footer-title" class="col start justify-center">
+        <h4>Want to take the next step?</h4>
+        <a class="hvr" href="mailto:hello@namanprat.com">hello@namanprat.com</a>
+      </div>
+      <div id="socials" class="row space-even center">
+        <a class="hvr" href="https:www.linkedin.com/in/namanprat/"><h4>LinkedIn</h4></a>
+        <a class="hvr" href="https:instagram.com/namanprat_"><h4>Instagram</h4></a>
+      </div>
+</footer>
 
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-});
-   </script>
-   <script>
-    var loader = document.getElementById("preloader");
-    window.addEventListener("load", function(){
-      loader.style.display = "none";
-
-    })
-   </script>
-  </body>
+  <script src="./scripts/gsap-page1.js"></script>
+  <script src="./scripts/marquee.js"></script>
+  <script src="./scripts/ukiyo.min.js"></script>
+  <script src="./scripts/bg-fade.js"></script>
+  <script src="./scripts/lenis.js"></script>
+</body>
+<script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+</script>
 </html>
+

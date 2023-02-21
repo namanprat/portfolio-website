@@ -6,215 +6,186 @@
     <meta name="description" content="Naman Pratulya's Portfolio">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='cache-control' content='no-cache'>
+    <meta http-equiv='expires' content='0'>
+    <meta http-equiv='pragma' content='no-cache'>
     
-    <title>Naman Pratulya</title>
+    <title>Covihelp- All in one health app that helps local communities connect with medical facilites</title>
+    <link rel="icon" type="image/x-icon" href="icons/favicon.ico">
 
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./styles/project.css" />
-    <link rel="stylesheet" href="./styles/locomotive-scroll.css" />
+    <link rel="stylesheet" href="./styles/project copy.css" />
+    <link rel="stylesheet" href="https:use.typekit.net/mgt6qut.css">
 
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM Mono:wght@400&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:wght@500&display=swap"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=DM Sans:wght@500&display=swap"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/ScrollTrigger.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
-  </head>
+
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https:cdn.jsdelivr.net/gh/studio-freight/lenis@0.2.28/bundled/lenis.js"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5EDPQP6NY"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X5EDPQP6NY');
+</script>
+  </head> 
   <body>
-    <div class="covihelp" data-scroll-container>
-      <div id="header">
-        <div class="navbar" data-animate-on-scroll>
-          <nav>
-            <li><a href="./index.html" class="cta">@NAMANPRAT</a></li>
-            <ul>
-                <li><a href="./work.html" class="cta">MY WORK</a></li>
-                <li><a href="#bottom" class="cta">CONNECT</a></li>
-                <li><a href="./resume.html" class="cta">RESUME</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <div class="project-content">
-      <div class="hero" data-scroll data-scroll-speed="3">
-          <div class="title">
-            <h1>Covihelp</h1>
-            <div class="title-desc">
-              <div class="frame">
-                <h3>My role</h3>
-                <p>UI and UX</p>
-              </div>
-              <div class="frame">
-                <h3>Duration</h3>
-                <p>2 Weeks</p>
-              </div>
-              <div class="frame">
-                <h3>The team</h3>
-                <p>Just me</p>
-              </div>
+    <main id="covihelp overflow-hidden">
+
+        <nav id="navbar" class="row space-bw center w-2">
+          <li><a id="nav-resume" class="nav" href="./resume.html">RESUME</a></li>
+          <li><a id="nav-home" class="nav" href="./index.html">NAMAN PRATULYA</a></li>
+          <li><a id="nav-contact" class="nav" href="mailto:hello@namanprat.com">CONTACT</a></li>
+        </nav>
+        
+          <div id="hero" class="flex space-bw center w-2">
+            <h1 class="title">Covihelp</h1>
+            <div id="crumbs" class="col space-even">
+              <h4 id="about">Mobile app/ UI UX Case study</h4>
+            <div class="col center">
+              <crumb class="row center">
+                <h4>My role</h4>
+                <h4>UI and UX</h4>
+              </crumb>
+              <crumb class="row center">
+                <h4>Duration</h4>
+                <h4>2 weeks</h4>
+              </crumb>
+              <crumb class="row center">
+                <h4>The team</h4>
+                <h4>Me</h4>
+                </crumb>
+            </div>
             </div>
           </div>
-          <div class="overview">The coronavirus crisis has brought India's 
-            public health system to its downfall with hospitals running 
-            out of beds and people desperately seeking medical help for their 
-            loved ones.</div>
+        <div class="coverimg flex">
+          <img class="bg-section" src="images/covihelp/cover.jpg" />
         </div>
-        <div class="projectcover" data-animate-on-scroll>
-          <img class="imgcover" alt="" src="images/covihelp/covihelpcover.jpg" />
-        </div>
-<div class="section" data-scroll data-scroll-speed="1">
-  <div class="section-header">Empathize
-    <h2>Evaluating the user's needs</h2></div>
-    <div class="paragraph">
-      <div class="numbered-points">
-      <ul><li>ICU's</li>
-        <li>Availability of beds/ wards</li>
-          <li>Reliable information</li>
-        <li>Oxygen tanks</li>
-      <li>Local needs</li></ul>
-    </div>
-    </div>
-  </div>
-  <div class="section" data-scroll data-scroll-speed="2">
-    <div class="section-header">Empathize
-    <h2>A platform for the financially illiterate</h2></div>
-    <div class="paragraph">
-      <p>To conduct user research, I conducted the 4 step 
-        process to combat the problem:
-      <ul><li>Discover- Determine what is relevant for the users</li>
-      <li>Explore- See how to address all user needs</li>
-    <li>Test- Evaluate your designs</li>
-  <li>Listen- Put issues in perspective, uncover any new problems 
-    and spot trends</li></ul></p>
-    </div>
-    </div>
-    <div class="questionnaire" data-scroll data-scroll-speed="2">
-      <div class="section-header">User research
-        <h2>Creating a questionnaire</h2></div>
-        <div class="paragraph" data-scroll data-scroll-speed="1">
-          <div class="q-box">
-            <p>These are some of the questions I asked:</p>
-            <ul><li>When you needed the resources how do you wish 
-              things were? What are the things you were glad that they existed?</li>
-              <li>What were the difficulties you faced?</li>
-              <li>Were you asked for resources?</li>
-              <li>Did you ask for information and were they reliable?</li>
-            </ul>
-        </div>
-      </div>
-    </div>
-  <div class="section-img" data-scroll data-scroll-speed="3">
-    <h2>Creating User personas</h2>
-    <img class="img" alt="" src="images/covihelp/Vardhan User Persona.jpg" />
-    <img class="img" alt="" src="images/covihelp/Rashi User Persona.jpg" />
-    </div>
-    <div class="section" data-scroll data-scroll-speed="2">
-      <div class="section-header">Finding Opportunity in the Market
-      <h2>How to combat the issue?</h2></div>
-      <div class="paragraph">
-        <p>My goal is to create a platform that acts as a middleman between the user 
-          and medical authorities. Using the HMW (How Might We) tool, I was able to 
-          get some clarity</p>
-        <ul><li>HMW connect local health care centers with NGOs and donors for funding 
-          or resources. (Basically help them enhance their capacity)</li>
-          <li>HMW create a detailed mapping of beds (ward/HDU/ICU) for patients 
-            at various facilities.</li>
-          <li>HMW create a database of all medical and paramedical staff who could contribute</li>
-          <li>HMW allocate resources as per the spectrum of illness(mild, moderate, severe) and 
-            medical history.</li>
-          </ul>
-          <p>Oxygen access has been a long-neglected element of health system planning,
-             despite being an essential treatment for various diseases. In many countries, 
-             health facilities are not equipped to meet the rising demand for oxygen tanks. 
-             Almost half of all hospitals in such areas have an inconsistent supply even a 
-             lack of medical oxygen.</p>
-          </div>
-          </div>
-          <div class="section-img" data-scroll data-scroll-speed="3">
-            <div class="section-header">Sketches</div>
-            <img class="img" alt="" src="images/covihelp/sketch1.png" />
-            <img class="img" alt="" src="images/covihelp/sketch2jpg" />
-            <img class="img" alt="" src="images/covihelp/sketch3jpg" />
+        <div class="project-content w">
+          <section class="flex center space-bw">
+            <div class="section-header col start"><h4>Overview</h4>
+            <h2>A platform to connect with <span>medical facilities</span></h2></div>
+            <p>The coronavirus crisis has brought India's 
+              public health system to its downfall with hospitals running 
+              out of beds and people desperately seeking medical help for their 
+              loved ones.</p>
+          </section>
+
+          <section class="flex center space-bw">
+            <div class="section-header col start"><h4>Empathize</h4>
+              <h2>Evaluating the <span>user's needs</span></h2></div>
+              <p class="q-box">
+                    1. ICU's
+                    <br>2. Availability of beds/ wards
+                    <br>3. Reliable information
+                    <br>4. Oxygen tanks
+                    <br>5. Local needs</p>
+           </section>
+           <section class="flex center space-bw">
+            <div class="section-header col start"><h4>Empathize</h4>
+              <h2>Understanding the <span>user</span> at a deeper level</h2></div>
+              <p class="q-box">
+                    Discover- Determine what is relevant for the users
+                    <br>Explore- See how to address all user needs
+                    <br>Test- Evaluating my design choices
+                    <br>Listen- Put issues in perspective, uncover any new problems 
+                    and spot trends</p>
+           </section>
+           <section class="flex center space-bw">
+            <div class="section-header col start"><h4>Empathize</h4>
+              <h2>Understanding the <span>user</span> at a deeper level</h2></div>
+              <p class="q-box">These are some of the questions I asked:
+                    <br>When you needed the resources how do you wish 
+                    things were? What are the things you were glad that they existed?
+                    <br>What were the difficulties you faced?
+                    <br>Were you asked for resources?
+                    <br>Did you ask for information and were they reliable?</p>
+           </section>
+          <section class="col center w">
+            <div class="section-header img-head"><h2>Creating <span>User personas</span></h2></div>
+            <img class="img" alt="" src="images/covihelp/Vardhan User Persona.jpg" />
+            <img class="img" alt="" src="images/covihelp/Rashi User Persona.jpg" />
+          </section>
+          <section class="flex center space-bw">
+            <div class="section-header col start"><h4>Finding Opportunity in the Market</h4>
+              <h2>Combating the <span>issue</span></h2></div>
+              <p class="q-box">My goal is to create a platform that acts as a middleman between the user 
+                and medical authorities. Using the HMW (How Might We) tool, I was able to 
+                get some clarity.
+                    <br>HMW connect local health care centers with NGOs and donors for funding 
+                    or resources. (Basically help them enhance their capacity)
+                    <br>HMW create a detailed mapping of beds (ward/HDU/ICU) for patients 
+                    at various facilities.
+                    <br>HMW create a database of all medical and paramedical staff who could contribute
+                    <br>HMW allocate resources as per the spectrum of illness(mild, moderate, severe) and 
+                    medical history.</p>
+           </section>
+           <showcase class="flex start space-bw w">
+            <div class="showcase-header center flex">
+                <div class="col start"><h4>Project Showcase</h4>
+                  <h2>Screens as an <span>outcome</span></h2></div>
+                    </div>
+                    <div class="col center space-bw prev-screens">
+                      <img class="prev" alt="" src="images/covihelp/Dashboard.png" />
+                      <img class="prev" alt="" src="images/covihelp/Hamburger.png" />
+                      <img class="prev" alt="" src="images/covihelp/Medicines.png" />
+                      <img class="prev" alt="" src="images/covihelp/product page.png" />
+                      <img class="prev" alt="" src="images/covihelp/Doctors.png" />
+                      <img class="prev" alt="" src="images/covihelp/Chat Box.png" />
+                      <img class="prev" alt="" src="images/covihelp/Chat Box 2.png" />
+                      <img class="prev" alt="" src="images/covihelp/ORS.png" />
+                    </div>
+                  </showcase>
+                  </div>
+          </main>
+          <footer class="col center space-bw w">
+            <div id="sitemap-cluster" class="row space-bw end">
+                <sec></sec>
+                <div class="site row space-bw">
+                    <div class="footer-nav">
+                        <h4>Sitemap</h4>
+                            <a class="hvr" href="./index.html"><p>Home</p></a>
+                            <a class="hvr" href="./"><p>Projects</p></a>
+                            <a class="hvr" href="./resume.html"><p>Resume</p></a>
+                    </div>
+                    <div class="footer-nav">
+                        <h4>My socials</h4>
+                            <a class="hvr" href="https:www.linkedin.com/in/namanprat/"><p>LinkedIn</p></a>
+                            <a class="hvr" href="https:instagram.com/namanprat_"><p>Instagram</p></a>
+                            <a class="hvr" href="https:github.com/namanprat"><p>Github</p></a>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div id="bottom">
-          <div class="footer" data-scroll data-scroll-speed="2">
-            <h2>Let's take the next big step</h2>
-            <div class="inner-footer" > 
-             <p> Have an idea and like my work? Take the next big step with your
-              ideas and make them a reality. Shoot me an email and we shall get
-              into contact as soon as possible!
-             </p>
-              <a href="mailto:a.namanprat@gmail.com" class="email-cta">
-                <div class="cta">SEND AN EMAIL</div>
-                <i class="fa-solid fa-chevron-right"></i></a>
-           </div>
-        <ul class="social">
-          <li><a class="links" href="https://www.linkedin.com/in/namanprat/">
-              <i class="fa-brands fa-linkedin"></i>
-              <div class="social-div">
-                <h3>LinkedIn</h3>
-                <p>@namanprat</p>
-              </div>
-             </a>
-          </li>
-          <li><a class="links" href="https://instagram.com/namanprat_">
-            <i class="fa-brands fa-instagram"></i>
-          <div class="social-div">
-            <h3>Instagram</h3>
-            <p>@namanprat_</p>
-          </div></a>
-        </li>
-        </ul>
-        <div class="bottom-footer" data-scroll data-scroll-speed="0.01">
-          <p>Made by Naman Pratulya</p>
-          <a href="#" class="cta">BACK TO THE TOP</a>
-        </div>
-        </div>
-        </div>
-  </div>
-  <script src="./js/scroll.js"></script>
-  <script src="./js/app.js"></script>
-  <script src="./js/grained.js"></script>
-  <script>
-    var options = {}
-    grained('#covihelp',options);
-    </script>
-    
-      <script>
-         var scrollAnimElements = document.querySelectorAll("[data-animate-on-scroll]");
-          var observer = new IntersectionObserver(
-            (entries) => {
-              for (const entry of entries) {
-                if (entry.isIntersecting || entry.intersectionRatio > 0) {
-                  const targetElement = entry.target;
-                  targetElement.classList.add("animate");
-                  observer.unobserve(targetElement);
-                }
-              }
-            },
-            {
-              threshold: 0.5,
-            }
-          );
-          
-          for (let i = 0; i < scrollAnimElements.length; i++) {
-            observer.observe(scrollAnimElements[i]);
-          }
-      </script>       
+            <div class="footer-title center">
+                <h4>You've reached the end</h4>
+                <a class="hvr" href="mailto:hello@namanprat.com">
+                  <logo id="footer-cta" class="row justify-center">
+                    Shoot me an email <div class="icon">
+                  <svg fill="#1C2033" id="top-right" xmlns="http:www.w3.org/2000/svg" xmlns:xlink="http:www.w3.org/1999/xlink"
+                x="0px" y="0px" viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+                <g>
+                <path d="M15,51.3c-0.6,0-1.2-0.2-1.6-0.7c-0.9-0.9-0.9-2.3,0-3.2l30.3-30.3H19.5c-1.2,0-2.2-1-2.2-2.2s1-2.2,2.2-2.2H49
+                 c1.2,0,2.2,1,2.2,2.2v29.7c0,1.2-1,2.2-2.2,2.2s-2.2-1-2.2-2.2V20.5L16.6,50.7C16.2,51.1,15.6,51.3,15,51.3z"/>
+                </g>
+                </svg>
+                </div>
+              </logo>
+            </a>
+            </div>
+            <h4 class="bottom">Designed and built by me</h4>
+    </footer>
+
+    <script src="./scripts/gsap-project.js"></script>
+  <script src="./scripts/ukiyo.min.js"></script>
+  <script src="./scripts/lenis.js"></script>
+
 </body>
+<script>
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+</script>
 </html>
 
 
